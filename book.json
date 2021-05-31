@@ -5,5 +5,26 @@
         "pdf": "styles/pdf.css",
         "mobi": "styles/mobi.css",
         "epub": "styles/epub.css"
+    },
+    "variables": {
+        "themeHqbook": {
+            "nav": [
+                {
+                    "url": "https://br-analytics.com",
+                    "target": "_blank",
+                    "name": "Руководство пользователя"
+                },
+                {
+                    "url": "https://br-analytics.ru/education/",
+                    "target": "_blank",
+                    "name": "Обучение"
+                },
+                {
+                    "url": "https://br-analytics.ru/feedback/",
+                    "target": "_blank",
+                    "name": "Поддержка"
+                }
+            ]
+        }
     }
 }

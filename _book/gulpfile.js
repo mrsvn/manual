@@ -20,7 +20,7 @@ function compile_scss() {
 }
 
 function watch_scss() {
-    watch(path_sass_inner +'**/*.scss', { queue: false }, series(compile_scss, rebuild_honkit))
+    watch([path_sass_inner +'**/*.scss', './_layouts/**'], { ignoreInitial: false, queue: false }, series(compile_scss, rebuild_honkit))
 }
 
 exports.default = watch_scss;
