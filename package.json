@@ -17,11 +17,9 @@
   "dependencies": {
     "@honkit/honkit-plugin-theme-default": "^3.6.20",
     "gitbook-api": "^3.0.2",
-    "gitbook-plugin-theme-api": "^1.1.2",
     "gitbook-plugin-theme-gestalt": "^1.0.7",
     "gitbook-plugin-theme-hqbook": "^1.1.0",
     "gulp-sass": "^4.1.0",
-    "vuepress-theme-book": "0.0.5",
     "ws": "^3.3.3"
   }
 }

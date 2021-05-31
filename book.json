@@ -10,8 +10,8 @@
         "themeHqbook": {
             "nav": [
                 {
-                    "url": "https://br-analytics.com",
-                    "target": "_blank",
+                    "url": "./",
+                    "target": "",
                     "name": "Руководство пользователя"
                 },
                 {
@@ -26,5 +26,10 @@
                 }
             ]
         }
-    }
+    },
+    "title": "Brand Analytics руководство пользователя",
+    "plugins": [
+      "-sharing",
+      "-fontsettings"
+    ]
 }
