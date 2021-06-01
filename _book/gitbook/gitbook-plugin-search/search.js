@@ -32,6 +32,8 @@ require([
     }
 
     function displayResults(res) {
+
+        console.log(gitbook, res, 'sdsddsdsdsdsd')
         $bookSearchResults.addClass('open');
 
         var noResults = res.count == 0;

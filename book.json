@@ -31,5 +31,6 @@
     "plugins": [
       "-sharing",
       "-fontsettings"
-    ]
+    ],
+    "language": "ru"
 }

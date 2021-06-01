@@ -164,6 +164,8 @@
         color: #4c515c; }
       .book-summary nav ul.summary li.chapter {
         border-radius: 4px !important; }
+        .book-summary nav ul.summary li.chapter[data-level="1.1"] {
+          display: none; }
         .book-summary nav ul.summary li.chapter a, .book-summary nav ul.summary li.chapter span {
           padding: 5px 20px 7px;
           color: #4c515c;
@@ -232,3 +234,6 @@
   .book.with-summary .book-body {
     left: 280px;
     margin-left: 80px; } }
+
+#book-search-results .search-results .has-results .search-results-item a {
+  color: #292f37; }
