@@ -2,6 +2,12 @@
 * {
   font-family: 'Montserrat', 'Helvetica', sans-serif !important; }
 
+.book-header {
+  display: none !important; }
+
+.book mark {
+  background: rgba(143, 193, 68, 0.3); }
+
 .book .logo {
   margin-top: -9px;
   flex-shrink: 0;
@@ -237,3 +243,6 @@
 
 #book-search-results .search-results .has-results .search-results-item a {
   color: #292f37; }
+
+#book-search-results span.search-highlight-keyword {
+  background: rgba(143, 193, 68, 0.3); }

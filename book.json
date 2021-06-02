@@ -28,7 +28,7 @@
         }
     },
     "title": "Brand Analytics руководство пользователя",
-    "plugins": [
+    "plugins": ["-lunr", "-search", "search-plus",
       "-sharing",
       "-fontsettings"
     ],
