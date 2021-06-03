@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap");
+html {
+  min-width: 1280px; }
+
 * {
   font-family: 'Montserrat', 'Helvetica', sans-serif !important; }
 
@@ -125,9 +128,20 @@
   line-height: 1.14;
   letter-spacing: normal;
   color: #292f37;
-  padding-bottom: 40px;
-  border-bottom: 2px solid #e6ecf1;
+  padding-bottom: 0;
+  border: none;
   margin-bottom: 32px; }
+
+.book-body .markdown-section h2 {
+  font-size: 30px;
+  line-height: 34px;
+  margin-top: 64px;
+  margin-bottom: 24px; }
+
+.book-body .markdown-section p {
+  font-size: 16px;
+  line-height: 1.63;
+  margin-bottom: 24px; }
 
 .book-body .markdown-section img {
   margin: 32px auto;
@@ -136,6 +150,21 @@
   max-width: 100%;
   background: #e4e4e478;
   box-sizing: border-box; }
+
+.book-body .markdown-section ul {
+  padding-left: 20px; }
+  .book-body .markdown-section ul li::marker {
+    font-size: 18px;
+    color: #979ca9; }
+
+.book-body .markdown-section ol, .book-body .markdown-section ul {
+  margin-bottom: 32px; }
+  .book-body .markdown-section ol li, .book-body .markdown-section ul li {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 16px; }
+    .book-body .markdown-section ol li:last-child, .book-body .markdown-section ul li:last-child {
+      margin-bottom: 0; }
 
 .book-body .page-inner {
   max-width: 750px;

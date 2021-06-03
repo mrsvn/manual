@@ -2,7 +2,7 @@
   "name": "manual",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,12 +14,18 @@
     "gulp-run": "^1.7.1",
     "honkit": "^3.6.20"
   },
+  "files": [
+    "./index.js",
+    "./script.js"
+  ],
   "dependencies": {
     "@honkit/honkit-plugin-theme-default": "^3.6.20",
     "gitbook-api": "^3.0.2",
     "gitbook-plugin-theme-gestalt": "^1.0.7",
     "gitbook-plugin-theme-hqbook": "^1.1.0",
+    "gulp-inject-string": "^1.1.2",
     "gulp-sass": "^4.1.0",
+    "honkit-plugin-ba-scripts": "0.0.1",
     "ws": "^3.3.3"
   }
 }

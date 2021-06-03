@@ -214,9 +214,11 @@
                                 
                                 <h1 id="типы-тем">Типы тем</h1>
 <p>Чтобы создать тему нажмите кнопку «Добавить новую тему» в разделе &quot;Темы&quot;</p>
+<p>При настройке фильтров предусмотрена возможность в реальном времени посмотреть сообщения, которые будут найдены по текущим настройкам. Это позволит Вам еще до сохранения темы получить представление о том, правильно или нет настроены поисковые запросы.</p>
+<p>Для предварительного просмотра сообщений нажмите кнопку «Показать результаты». После этого на странице будут показаны последние 60 сообщений, соответствующих заданным настройкам. Проанализировав их, Вы сможете откорректировать поисковые запросы, если в сообщениях будет много информационного мусора, или сохранить тему, если результаты поиска будут успешными.</p>
 <p><img src="https://github.com/HaoqiangChen/gitbook-plugin-theme-hqbook/raw/master/_assets/preview.png" alt="Image"></p>
 <p><strong><em>Внимание!</em></strong> Создавать темы может только администратор аккаунта.</p>
-<h3 id="фильтры-при-создании-темы">Фильтры при создании темы</h3>
+<h2 id="фильтры-при-создании-темы">Фильтры при создании темы</h2>
 <p>Inline <code>code</code> has <code>back-ticks around</code> it.</p>
 <ul>
 <li>Зайдите в &quot;Сводный отчет&quot; темы;</li>
@@ -225,7 +227,17 @@
 <li>Нажмите ссылку «Экспорт» и выберите нужный формат экспорта;</li>
 <li>Для Excel, Word, PDF выберите состав данных и нажмите кнопку &quot;Создать&quot;;</li>
 <li>Для CSV и JSON создание отчета начинается сразу после выбора формата.</li>
+<li>ff</li>
 </ul>
+<ol>
+<li>Тип темы – от <a href="md/README_1.md">типа темы</a> зависит состав источников по которым будет проводиться поиск сообщений, а также состав метрик сообщений и отчетов.</li>
+<li>Поисковый запрос – набор ключевых слов и фраз, по которым анализируются сообщения для их поступления в тему. Поисковый запрос является основным фильтром при создании темы, и может быть введен двумя способами «форма – конструктор» или «форма с операторами». Чтобы правильно составить поисковый запрос обязательно ознакомьтесь с языком поисковых запросов, используемым системой Brands Analytics, а также с примерами составления поисковых запросов.</li>
+<li>Минус-слова – фильтр позволяет назначить единые минус-слова для всех поисковых запросов темы. Служит для исключения из темы сообщений, не имеющих отношения к объекту мониторинга: если минус-слова встречаются в тексте сообщения, то такое сообщение не попадает в тему.<ul>
+<li>Item 3a</li>
+<li>Item 3b</li>
+</ul>
+</li>
+</ol>
 <table>
 <thead>
 <tr>
@@ -338,7 +350,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Типы тем","level":"1.3","depth":1,"next":{"title":"Страница пользователей","level":"2.1","depth":1,"path":"md/users/usersPage.md","ref":"./md/users/usersPage.md","articles":[]},"previous":{"title":"Создание темы","level":"1.2","depth":1,"path":"md/README_1.md","ref":"./md/README_1.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-fontsettings","livereload"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"themeHqbook":{"nav":[{"url":"/","target":"","name":"Руководство пользователя"},{"url":"https://br-analytics.ru/education/","target":"_blank","name":"Обучение"},{"url":"https://br-analytics.ru/feedback/","target":"_blank","name":"Поддержка"}]}},"title":"Brand Analytics руководство пользователя","language":"ru","gitbook":"*"},"file":{"path":"md/README_2.md","mtime":"2021-05-31T11:46:35.355Z","type":"markdown"},"gitbook":{"version":"3.6.20","time":"2021-06-01T14:21:22.936Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Типы тем","level":"1.3","depth":1,"next":{"title":"Страница пользователей","level":"2.1","depth":1,"path":"md/users/usersPage.md","ref":"./md/users/usersPage.md","articles":[]},"previous":{"title":"Создание темы","level":"1.2","depth":1,"path":"md/README_1.md","ref":"./md/README_1.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-fontsettings","ba-scripts","livereload"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"ba-scripts":{},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"themeHqbook":{"nav":[{"url":"/","target":"","name":"Руководство пользователя"},{"url":"https://br-analytics.ru/education/","target":"_blank","name":"Обучение"},{"url":"https://br-analytics.ru/feedback/","target":"_blank","name":"Поддержка"}]}},"title":"Brand Analytics руководство пользователя","language":"ru","gitbook":"*"},"file":{"path":"md/README_2.md","mtime":"2021-06-03T15:22:36.652Z","type":"markdown"},"gitbook":{"version":"3.6.20","time":"2021-06-03T15:50:00.487Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -390,6 +402,10 @@
     </script>
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-ba-scripts/script.js"></script>
+        
     
         
         <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>

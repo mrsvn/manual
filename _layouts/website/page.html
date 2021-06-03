@@ -99,7 +99,7 @@
                             <div
                                     class="navigation navigation-prev {% if not (page.next and page.next.path) %}navigation-unique{% endif %}"
                                     aria-label="Previous page: {{ page.previous.title }}">
-                                <div class="navigation-topic">{{ summary.parts[page.previous.level | first | int -1].title | capitalize }}</div>
+                                <div class="navigation-topic">{{ summary.parts[page.previous.level | int | round(0, "floor") -1].title | capitalize }}</div>
 
                                 <a href="{{ page.previous.path|resolveFile }}{{ page.previous.anchor }}"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="10" viewBox="0 0 24 10">
                                     <g fill="none" fill-rule="evenodd">
@@ -118,7 +118,7 @@
                         {% if page.next and page.next.path %}
                         <div class="navigation navigation-next {% if not (page.previous and page.previous.path) or page.previous.level == 1.1 %}navigation-unique{% endif %} {% if (page.previous and page.previous.level == 1.1) %}navigation-unique{% endif %}"
                              aria-label="Next page: {{ page.next.title }}">
-                            <div class="navigation-topic">{{ summary.parts[page.next.level | first | int - 1].title | capitalize }}</div>
+                            <div class="navigation-topic">{{ summary.parts[page.next.level | int | round(0, "floor") - 1].title | capitalize }}</div>
 
                             <a href="{{ page.next.path|resolveFile }}{{ page.next.anchor }}">{{ page.next.title }}
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="10" viewBox="0 0 24 10">
