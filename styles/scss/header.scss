@@ -1,0 +1,106 @@
+@import 'variables';
+
+.book {
+  .header-inner {
+    border: none;
+    margin: auto;
+    width: 100%;
+    justify-content: space-between;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    background-color: $dark-grey;
+
+    .logo img {
+      max-height: 44px !important;
+    }
+  }
+
+  .header-nav {
+    list-style: none;
+    padding-left: 64px;
+    display: flex;
+    align-items: center;
+    overflow: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    &-wrapper {
+      position: relative;
+      overflow: hidden;
+
+      &:after {
+        top: 0;
+        right: 0;
+        width: 32px;
+        height: 100%;
+        content: " ";
+        position: absolute;
+        background: linear-gradient(to right, rgba(36, 42, 49, 0) 0%, $dark-grey 100%);
+        pointer-events: none;
+      }
+    }
+
+    li {
+      padding-right: 46px;
+
+      a {
+        white-space: nowrap;
+        font-size: 14px;
+        line-height: 1.29;
+        color: $white;
+        outline: none;
+
+        &:hover, &.active {
+          color: $link-blue !important;
+        }
+
+        &.active {
+          &:hover {
+            color: $link-blue !important;
+          }
+        }
+      }
+    }
+
+    &-back {
+      margin-left: auto;
+      margin-right: 47px;
+      color: $white;
+      display: inline-block;
+
+      svg {
+        vertical-align: middle;
+        margin-right: 2px;
+      }
+    }
+
+    &-back, .header-hav-back-link {
+      white-space: nowrap;
+      font-size: 14px;
+      line-height: 1.29;
+      color: transparentize($white, 0.3);
+
+      &:hover, &.active {
+        color: $link-blue !important;
+
+        svg {
+          g {
+            g {
+              fill: $link-blue !important;
+            }
+          }
+        }
+      }
+
+      &.active {
+        &:hover {
+          color: transparentize($white, 0.3) !important;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,95 @@
+@import 'variables';
+
+.book {
+  .pages-navigation {
+    margin-top: 48px;
+    margin-bottom: 100px;
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 100%;
+    width: 100%;
+    max-width: 750px;
+
+    .navigation {
+      float: none;
+      justify-content: initial;
+      align-content: initial;
+      align-items: center;
+      max-width: 50%;
+      width: auto;
+      min-width: auto;
+      position: static;
+      font-size: 16px;
+      line-height: 1.63;
+      flex-wrap: wrap;
+      flex-direction: row;
+
+      a {
+        &:hover {
+          color: $link-blue;
+
+          svg {
+            g {
+              g {
+                fill: $link-blue;
+              }
+            }
+          }
+        }
+
+      }
+
+
+      a {
+        color: $link-blue-hover;
+      }
+
+      svg {
+        g {
+          g {
+            fill: $link-blue-hover;
+          }
+        }
+      }
+
+      &-unique {
+        width: 100%;
+        max-width: 100%;
+      }
+
+      &-next {
+        text-align: right;
+        justify-content: flex-end;
+
+        .navigation-topic {
+          padding-right: 40px;
+        }
+
+        svg {
+          margin-left: 11px;
+        }
+      }
+
+      &-prev {
+        text-align: left;
+        justify-content: flex-start;
+
+        .navigation-topic {
+          padding-left: 40px;
+        }
+
+        svg {
+          margin-right: 11px;
+        }
+      }
+
+      &-topic {
+        font-size: 13px;
+        width: 100%;
+        color: $grey;
+      }
+    }
+  }
+}

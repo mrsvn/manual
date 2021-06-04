@@ -18,8 +18,93 @@ html {
     width: 1px;
     background-color: rgba(255, 255, 255, 0.3); }
 
+.book #book-search-input {
+  display: flex;
+  flex-shrink: 0;
+  height: 40px;
+  font-size: 14px;
+  margin: 0;
+  padding-left: 24px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  background: transparent; }
+  .book #book-search-input input {
+    font-size: 14px;
+    color: #ffffff !important;
+    padding-left: 2px; }
+    .book #book-search-input input::placeholder {
+      color: #ffffff !important; }
+  .book #book-search-input button {
+    padding: 0;
+    padding-right: 6px;
+    appearance: none;
+    display: inline-block;
+    border: none;
+    margin: 0;
+    text-decoration: none;
+    background: transparent;
+    color: #ffffff;
+    cursor: pointer; }
+    .book #book-search-input button svg {
+      width: 16px;
+      height: 16px;
+      vertical-align: middle; }
+
+.book .book-summary, .book .book-body {
+  top: 70px; }
+
+.book-body .body-inner {
+  padding-top: 48px; }
+
+.book-body .page-inner {
+  max-width: 750px;
+  margin: 0;
+  padding: 0; }
+
+.book-summary {
+  padding-top: 32px;
+  background-color: #ffffff;
+  width: 280px;
+  padding-left: 20px;
+  border: none; }
+  .book-summary nav {
+    padding: 0; }
+    .book-summary nav ul.summary li {
+      padding: 0; }
+      .book-summary nav ul.summary li a {
+        text-decoration: none !important; }
+      .book-summary nav ul.summary li.header {
+        padding: 25px 19px 11px;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 1.33;
+        letter-spacing: normal;
+        text-transform: uppercase;
+        color: #4c515c; }
+      .book-summary nav ul.summary li.chapter {
+        border-radius: 4px !important; }
+        .book-summary nav ul.summary li.chapter[data-level="1.1"] {
+          display: none; }
+        .book-summary nav ul.summary li.chapter a, .book-summary nav ul.summary li.chapter span {
+          padding: 5px 20px 7px;
+          color: #4c515c;
+          font-size: 13px;
+          background-color: transparent;
+          border: none; }
+        .book-summary nav ul.summary li.chapter.active {
+          background-color: #ebf1fd !important; }
+        .book-summary nav ul.summary li.chapter:hover {
+          background-color: #edeeef !important; }
+
+@media screen and (min-width: 600px) {
+  .book.with-summary .book-body {
+    left: 280px;
+    margin-left: 80px; } }
+
+#book-search-results .search-results .has-results .search-results-item a {
+  color: #292f37; }
+
 .book .header-inner {
-  border-bottom: 1px solid #dededede;
+  border: none;
   margin: auto;
   width: 100%;
   justify-content: space-between;
@@ -83,128 +168,148 @@ html {
     .book .header-nav-back.active:hover, .book .header-nav .header-hav-back-link.active:hover {
       color: rgba(255, 255, 255, 0.7) !important; }
 
-.book #book-search-input {
-  display: flex;
-  flex-shrink: 0;
-  height: 40px;
-  font-size: 14px;
-  margin: 0;
-  padding-left: 24px;
-  border-left: 1px solid rgba(255, 255, 255, 0.3);
-  background: transparent; }
-  .book #book-search-input input {
-    font-size: 14px;
-    color: #ffffff !important;
-    padding-left: 2px; }
-    .book #book-search-input input::placeholder {
-      color: #ffffff !important; }
-  .book #book-search-input button {
-    padding: 0;
-    padding-right: 6px;
-    appearance: none;
-    display: inline-block;
+.book-body .markdown-section {
+  line-height: 1.5; }
+  .book-body .markdown-section .video-wrapper {
+    width: 100%;
+    position: relative;
+    margin: 32px 0;
+    padding-bottom: 56.25%;
+    height: 0; }
+    .book-body .markdown-section .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100% !important;
+      height: 100% !important; }
+  .book-body .markdown-section em {
+    font-style: normal !important; }
+  .book-body .markdown-section h1 {
+    font-size: 44px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    color: #292f37;
+    padding-bottom: 0;
     border: none;
-    margin: 0;
-    text-decoration: none;
-    background: transparent;
-    color: #ffffff;
-    cursor: pointer; }
-    .book #book-search-input button svg {
-      width: 16px;
-      height: 16px;
-      vertical-align: middle; }
-
-.book .book-summary, .book .book-body {
-  top: 70px; }
-
-.book-body .body-inner {
-  padding-top: 48px; }
-
-.book-body .markdown-section h1 {
-  font-size: 44px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.14;
-  letter-spacing: normal;
-  color: #292f37;
-  padding-bottom: 0;
-  border: none;
-  margin-bottom: 32px; }
-
-.book-body .markdown-section h2 {
-  font-size: 30px;
-  line-height: 34px;
-  margin-top: 64px;
-  margin-bottom: 24px; }
-
-.book-body .markdown-section p {
-  font-size: 16px;
-  line-height: 1.63;
-  margin-bottom: 24px; }
-
-.book-body .markdown-section img {
-  margin: 32px auto;
-  display: block;
-  padding: 0;
-  max-width: 100%;
-  background: #e4e4e478;
-  box-sizing: border-box; }
-
-.book-body .markdown-section ul {
-  padding-left: 20px; }
-  .book-body .markdown-section ul li::marker {
-    font-size: 18px;
-    color: #979ca9; }
-
-.book-body .markdown-section ol, .book-body .markdown-section ul {
-  margin-bottom: 32px; }
-  .book-body .markdown-section ol li, .book-body .markdown-section ul li {
-    font-size: 16px;
-    line-height: 26px;
+    margin-bottom: 32px; }
+  .book-body .markdown-section h2 {
+    font-size: 30px;
+    line-height: 34px;
+    margin-top: 64px;
+    margin-bottom: 24px; }
+  .book-body .markdown-section h3 {
+    font-size: 26px;
+    margin-top: 40px;
+    margin-bottom: 20px; }
+  .book-body .markdown-section h4 {
+    font-size: 20px;
+    margin-top: 32px;
     margin-bottom: 16px; }
-    .book-body .markdown-section ol li:last-child, .book-body .markdown-section ul li:last-child {
+  .book-body .markdown-section .image-comments ol {
+    counter-reset: image-comment-counter;
+    list-style: none;
+    padding-left: 0; }
+    .book-body .markdown-section .image-comments ol > li {
+      counter-increment: image-comment-counter;
+      position: relative;
+      padding-left: 40px; }
+      .book-body .markdown-section .image-comments ol > li:before {
+        content: counter(image-comment-counter);
+        color: #292f37;
+        font-size: 16px;
+        position: absolute;
+        --size: 28px;
+        left: 0;
+        line-height: var(--size);
+        width: var(--size);
+        height: var(--size);
+        top: 0;
+        background-color: #ebf1fd;
+        border-radius: 50%;
+        text-align: center; }
+  .book-body .markdown-section p {
+    font-size: 16px;
+    line-height: 1.63;
+    margin-bottom: 16px; }
+  .book-body .markdown-section a {
+    color: #4870b7;
+    text-decoration: underline; }
+    .book-body .markdown-section a:hover {
+      text-decoration: none; }
+  .book-body .markdown-section img {
+    margin: 32px auto;
+    display: block;
+    padding: 0;
+    max-width: 100%;
+    background: transparent;
+    box-sizing: border-box;
+    border: solid 1px rgba(151, 156, 169, 0.7); }
+  .book-body .markdown-section ul {
+    padding-left: 20px; }
+    .book-body .markdown-section ul li::marker {
+      font-size: 18px;
+      color: #979ca9; }
+  .book-body .markdown-section ol {
+    counter-reset: my-awesome-counter;
+    list-style: none;
+    padding-left: 0; }
+    .book-body .markdown-section ol > li {
+      counter-increment: my-awesome-counter;
+      position: relative;
+      padding-left: 32px; }
+      .book-body .markdown-section ol > li::before {
+        content: counters(my-awesome-counter, ".") ". ";
+        counter-increment: item;
+        font-size: 16px;
+        color: #292f37;
+        position: absolute;
+        left: 0;
+        top: 0; }
+  .book-body .markdown-section ol, .book-body .markdown-section ul {
+    margin-bottom: 32px; }
+    .book-body .markdown-section ol li, .book-body .markdown-section ul li {
+      font-size: 16px;
+      line-height: 26px;
+      margin-bottom: 16px; }
+      .book-body .markdown-section ol li:last-child, .book-body .markdown-section ul li:last-child {
+        margin-bottom: 0; }
+  .book-body .markdown-section blockquote {
+    background-color: rgba(143, 193, 68, 0.12);
+    border-radius: 8px;
+    padding: 16px 32px 20px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    color: #292f37;
+    border: none; }
+    .book-body .markdown-section blockquote p:last-child, .book-body .markdown-section blockquote ul:last-child, .book-body .markdown-section blockquote ol:last-child {
       margin-bottom: 0; }
-
-.book-body .page-inner {
-  max-width: 750px;
-  margin: 0;
-  padding: 0; }
-
-.book-summary {
-  padding-top: 32px;
-  background-color: #ffffff;
-  width: 280px;
-  padding-left: 20px;
-  border: none; }
-  .book-summary nav {
-    padding: 0; }
-    .book-summary nav ul.summary li {
-      padding: 0; }
-      .book-summary nav ul.summary li a {
-        text-decoration: none !important; }
-      .book-summary nav ul.summary li.header {
-        padding: 25px 19px 11px;
-        font-size: 12px;
-        font-weight: bold;
-        line-height: 1.33;
-        letter-spacing: normal;
-        text-transform: uppercase;
-        color: #4c515c; }
-      .book-summary nav ul.summary li.chapter {
-        border-radius: 4px !important; }
-        .book-summary nav ul.summary li.chapter[data-level="1.1"] {
-          display: none; }
-        .book-summary nav ul.summary li.chapter a, .book-summary nav ul.summary li.chapter span {
-          padding: 5px 20px 7px;
-          color: #4c515c;
-          font-size: 13px;
-          background-color: transparent;
-          border: none; }
-        .book-summary nav ul.summary li.chapter.active {
-          background-color: #ebf1fd !important; }
-        .book-summary nav ul.summary li.chapter:hover {
-          background-color: #edeeef !important; }
+  .book-body .markdown-section table {
+    margin-top: 40px;
+    margin-bottom: 32px; }
+    .book-body .markdown-section table th {
+      padding-top: 0 !important;
+      padding-bottom: 16px !important;
+      border: none;
+      font-size: 13px;
+      padding-right: 29px;
+      text-align: left !important; }
+      .book-body .markdown-section table th:first-child {
+        padding-left: 0; }
+    .book-body .markdown-section table tr {
+      background-color: white !important;
+      text-align: left !important;
+      border: none;
+      border-bottom: 1px solid #edeeef; }
+    .book-body .markdown-section table td {
+      border: none;
+      text-align: left !important;
+      padding-top: 12px !important;
+      padding-bottom: 12px !important; }
+      .book-body .markdown-section table td:first-child {
+        padding-left: 0; }
 
 .book .pages-navigation {
   margin-top: 48px;
@@ -259,10 +364,3 @@ html {
       width: 100%;
       color: #979ca9; }
 
-@media screen and (min-width: 600px) {
-  .book.with-summary .book-body {
-    left: 280px;
-    margin-left: 80px; } }
-
-#book-search-results .search-results .has-results .search-results-item a {
-  color: #292f37; }

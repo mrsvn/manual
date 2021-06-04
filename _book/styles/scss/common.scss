@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
+@import 'variables';
+
+html {
+  min-width: 1280px;
+}
+
+* {
+  font-family: 'Montserrat', 'Helvetica', sans-serif !important;
+}
+.book {
+  .logo {
+    margin-top: -9px;
+    flex-shrink: 0;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: calc(100% + 32px);
+      top: 10px;
+      height: 37px;
+      width: 1px;
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+
+  #book-search-input {
+    display: flex;
+    flex-shrink: 0;
+    height: 40px;
+    font-size: 14px;
+    margin: 0;
+    padding-left: 24px;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    background: transparent;
+
+    input {
+      font-size: 14px;
+      color: $white !important;
+      padding-left: 2px;
+
+      &::placeholder {
+        color: $white !important;
+      }
+    }
+
+    button {
+      padding: 0;
+      padding-right: 6px;
+      appearance: none;
+      display: inline-block;
+      border: none;
+      margin: 0;
+      text-decoration: none;
+      background: transparent;
+      color: $white;
+      cursor: pointer;
+
+      svg {
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+      }
+    }
+  }
+
+
+  .book-summary, .book-body {
+    top: 70px;
+  }
+
+  //book-body
+
+  &-body {
+    .body-inner {
+      padding-top: 48px;
+    }
+
+    .page-inner {
+      max-width: 750px;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+
+  //book summary
+  &-summary {
+    padding-top: 32px;
+    background-color: $white;
+    width: 280px;
+    padding-left: 20px;
+    border: none;
+
+    nav {
+      padding: 0;
+
+      ul.summary {
+        li {
+          padding: 0;
+
+          a {
+            text-decoration: none !important;
+          }
+
+          &.header {
+            padding: 25px 19px 11px;
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 1.33;
+            letter-spacing: normal;
+            text-transform: uppercase;
+            color: $middle-grey;
+          }
+          &.chapter {
+            border-radius: 4px !important;
+            &[data-level="1.1"] {
+              display: none;
+            }
+
+            a, span {
+              padding: 5px 20px 7px;
+              color: $middle-grey;
+              font-size: 13px;
+              background-color: transparent;
+              border: none;
+            }
+
+            &.active {
+                background-color: $lightest-blue !important;
+            }
+
+            &:hover {
+              background-color: $lightest-grey !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+@media screen and (min-width: 600px) {
+  .book.with-summary .book-body {
+    left: 280px;
+    margin-left: 80px;
+  }
+}
+
+
+#book-search-results .search-results .has-results .search-results-item a {
+  color: $text;
+}
